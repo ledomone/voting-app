@@ -7,8 +7,8 @@ class NavbarActions {
             'updateOnlineUsers',
             'updateAjaxAnimation',
             'updateSearchQuery',
-            'getCharactersCountSuccess',
-            'getCharactersCountFail',
+            'getCharacterCountSuccess',
+            'getCharacterCountFail',
             'findCharacterSuccess',
             'findCharacterFail'
         );
