@@ -520,9 +520,9 @@ app.get('/api/characters/:id', function (req, res, next) {
             return res.status(404).send({
                 message: 'Character not found.'
             });
-
-            res.send(character);
         }
+
+        res.send(character);
     });
 });
 
