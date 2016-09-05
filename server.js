@@ -376,14 +376,14 @@ app.get('/api/stats', function (req, res, next) {
        },
        function (callback) {
                 Character.count({
-                    race: 'Male'
+                    gender: 'Male'
                 }, function (err, maleCount) {
                     callback(err, maleCount);
                 });
        },
        function (callback) {
                 Character.count({
-                    race: 'Female'
+                    gender: 'Female'
                 }, function (err, femaleCount) {
                     callback(err, femaleCount);
                 });
