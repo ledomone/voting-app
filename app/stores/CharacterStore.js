@@ -19,7 +19,7 @@ class CharacterStore {
     onGetCharacterSuccess(data) {
         assign(this, data);
         $(document.body).attr('class', 'profile ' + this.race.toLowerCase());
-        let localData = localStorage.getItem('NEF') ? JSON.parse(localStorage.getItem('NEF))')) : {};
+        let localData = localStorage.getItem('NEF') ? JSON.parse(localStorage.getItem('NEF')) : {};
         let reports = localData.reports || [];
         this.isReported = contains(reports, this.characterId);
         // If is NaN (from division by zero) then set it to "0"
@@ -32,7 +32,7 @@ class CharacterStore {
     
     onReportSuccess() {
         this.isReported = true;
-        let localData = localStorage.getItem('NEF') ? JSON.parse(localstorage.getItem('NEF')) : {};
+        let localData = localStorage.getItem('NEF') ? JSON.parse(localStorage.getItem('NEF')) : {};
         localData.reports = localData.reports || [];
         localData.reports.push(this.characterId);
         localStorage.setItem('NEF', JSON.stringify(localData));
