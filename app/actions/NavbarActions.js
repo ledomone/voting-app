@@ -17,7 +17,7 @@ class NavbarActions {
     findCharacter(payload) {
         $.ajax({
             url: '/api/characters/search',
-            data: { name: payload.searchQury }
+            data: { name: payload.searchQuery }
         })
         .done((data) => {
             assign(payload, data);
